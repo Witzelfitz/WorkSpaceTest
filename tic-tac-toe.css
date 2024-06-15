@@ -1,0 +1,31 @@
+/* Styles for the Tic Tac Toe game board */
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Styles for the cells in the game board */
+#game div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    font-size: 2em;
+}
+
+/* Styles for the X marker */
+.x-marker {
+    color: red;
+}
+
+/* Styles for the O marker */
+.o-marker {
+    color: blue;
+}
