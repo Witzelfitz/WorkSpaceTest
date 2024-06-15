@@ -10,9 +10,9 @@ function toggleSection(section) {
 
 // Attach click events to section headers
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = ['.education', '.experience', '.skills'];
+    const sections = ['main > section:nth-of-type(1)', 'main > section:nth-of-type(2)'];
     sections.forEach(function(section) {
-        const header = document.querySelector(section + ' header');
+        const header = document.querySelector(section + ' > header');
         if (header) {
             header.addEventListener('click', function() {
                 toggleSection(section);

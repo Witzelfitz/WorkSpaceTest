@@ -9,9 +9,26 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px 0;
 }
 
-.education, .experience, .skills {
-    margin: 20px 0;
+header, main, section {
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 800px;
+}
+
+article, figure, figcaption {
+    margin: 10px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body, header, main, section, article, figure, figcaption {
+        margin: 10px;
+        padding: 10px;
+    }
 }
